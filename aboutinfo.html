@@ -9,199 +9,280 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Home: Bumblebee</title>
     <link rel="stylesheet" href="aboutinfo.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css"/>
-    
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <style>
         .menu {
-  font-weight: 100;
-  background: #efefef;
-  width: 185px;
-  height: 100%;
-  padding-left: 50px;
-  position: fixed;
-  z-index: 100;
-  -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  right: -135px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  color: #222;
-}
+            font-weight: 100;
+            background: #efefef;
+            width: 185px;
+            height: 100%;
+            padding-left: 50px;
+            position: fixed;
+            z-index: 100;
+            -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+            right: -135px;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            color: #222;
+        }
 
-.menu:hover, .menu:focus {
-  -webkit-transform: translate3d(-130px, 0, 0);
-          transform: translate3d(-130px, 0, 0);
-  -webkit-animation-timing-function: 1s ease-in;
-          animation-timing-function: 1s ease-in;
-}
+        .menu:hover,
+        .menu:focus {
+            -webkit-transform: translate3d(-130px, 0, 0);
+            transform: translate3d(-130px, 0, 0);
+            -webkit-animation-timing-function: 1s ease-in;
+            animation-timing-function: 1s ease-in;
+        }
 
-.menu .titlenav {
-  top: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  left: 10px;
-  font-weight: 800;
-  font-size: 15px;
-}
+        .menu .titlenav {
+            top: 50%;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+            left: 10px;
+            font-weight: 800;
+            font-size: 15px;
+        }
 
-.menu .nav {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-weight: 100;
-}
+        .menu .nav {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            font-weight: 100;
+        }
 
-.menu .nav li {
-  padding-bottom: 30px;
-  list-style-type: none;
-}
+        .menu .nav li {
+            padding-bottom: 30px;
+            list-style-type: none;
+        }
 
-.menu .nav li a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  font-size: 20px;
-}
+        .menu .nav li a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            font-size: 20px;
+        }
 
-.menu .nav li a:hover {
-  color: #aaa;
-}
+        .menu .nav li a:hover {
+            color: #aaa;
+        }
 
-.intro {
-  position: absolute;
-  top: 30%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  font-size: 45px;
-  text-align: center;
-  font-style: italic;
-}
+        .intro {
+            position: absolute;
+            top: 30%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            font-size: 45px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .button {
+            font-family: 'Roboto Mono', sans-serif;
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 2vmin;
+            display: inline-block;
+            position: relative;
+            border: 3px solid white;
+            box-shadow: -0.5vmin 0.5vmin 0 rgba(255, 255, 255, 0.5);
+            background: transparent;
+            margin-top: 5vmin;
+            mix-blend-mode: lighten;
+            color: white;
+            padding: 2vmin 2vmin 1.8vmin 2vmin;
+            letter-spacing: 0.1em;
+            text-shadow: none;
+            line-height: 1;
+            transform: translate3d(0.5vmin, -0.5vmin, 0);
+            transition: all 100ms linear;
+        }
+
+        .button:hover {
+            transform: translate3d(1vmin, -1vmin, 0);
+            box-shadow: -1vmin 1vmin 0 rgba(255, 255, 255, 0.5);
+            background: white;
+            color: black;
+        }
+
+        .button:active {
+            transform: translate3d(0px, 0px, 0);
+            box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.5);
+        }
     </style>
 </head>
 
 <body style="background-color: #f3f5f7;">
 
-        <div class="menu">
-            <div class="titlenav">MENU</div>
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Bumblebee</a></li>
-                <li><a href="gallery.html">Action</a></li>
-            </ul>
-        </div>
+    <div class="menu">
+        <div class="titlenav">MENU</div>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Bumblebee</a></li>
+            <li><a href="gallery.html">Action</a></li>
+        </ul>
+    </div>
 
-        <section class="dark">
-            <div class="container py-4">
-                <article class="postcard dark blue" style="margin-top: 50px;">
-                    <a class="postcard__img_link" href="#">
-                        <img class="img1 postcard__img" src="files/1.jpg" alt="Image Title" />
-                    </a>
-                    <div class="postcard__text">
-                        <h1 class="postcard__title blue"><a href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee">  Bumblebee (Transformers) </a></h1>
-                        <div class="postcard__subtitle small">
-                        </div>
-                        <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">Bumblebee was a young Autobot scout, who fought during the Cybertronian War alongside his "brother in arms", Hot Rod. During the war for Cybertron, Bumblebee was friends with the Autobot Diabla, at one point battling alongside her in the smelting pools of Polyhex. Unbeknownst to Bumblebee, Diabla was a Decepticon mole who had infiltrated the Autobots to destabilize them from within; when Diabla's treachery was revealed, Bumblebee maintained that Diabla had always been an Autobot, albeit one who had gone bad and joined the Decepticons. At some point, Bumblebee went through a rebellious phase, which Optimus would recall. After the AllSpark left Cybertron, the Autobots left their home to search for it. </div>
-                        
+    <section class="dark">
+        <div class="container py-4">
+            <article class="postcard dark blue" style="margin-top: 50px;">
+                <a class="postcard__img_link" href="#">
+                    <img class="img1 postcard__img" src="files/1.jpg" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a
+                            href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee"> Bumblebee (Transformers)
+                        </a></h1>
+                    <div class="postcard__subtitle small">
                     </div>
-                </article>
-                <article class="postcard dark red">
-                    <a class="postcard__img_link" href="#">
-                        <img class="img1 postcard__img" src="files/2.png" alt="Image Title" />	
-                    </a>
-                    <div class="postcard__text">
-                        <h1 class="postcard__title red"><a href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee">   World War II</a></h1>
-                        
-                        <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">Bumblebee arrived on Earth some time before the outbreak of the second World War, and alongside Hot Rod, they fought alongside a military unit in the war against the Nazis, taking up the codename ZB-7. He befriended the young Edmund Burton, but as the decades passed, Bumblebee would not come to remember World War II as a particularly noteworthy conflict.</div>
-                        
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Bumblebee was a young Autobot scout, who fought during the
+                        Cybertronian War alongside his "brother in arms", Hot Rod. During the war for Cybertron,
+                        Bumblebee was friends with the Autobot Diabla, at one point battling alongside her in the
+                        smelting pools of Polyhex. Unbeknownst to Bumblebee, Diabla was a Decepticon mole who had
+                        infiltrated the Autobots to destabilize them from within; when Diabla's treachery was revealed,
+                        Bumblebee maintained that Diabla had always been an Autobot, albeit one who had gone bad and
+                        joined the Decepticons. At some point, Bumblebee went through a rebellious phase, which Optimus
+                        would recall. After the AllSpark left Cybertron, the Autobots left their home to search for it.
                     </div>
-                </article>
-                <article class="postcard dark green">
-                    <a class="postcard__img_link" href="#">
-                        <img class="img1 postcard__img" src="files/3.png" alt="Image Title" />
-                    </a>
-                    <div class="postcard__text">
-                        <h1 class="postcard__title green"><a href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee">   Bumblebee Movie Prequel</a></h1>
-                        
-                        <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">After arriving on Earth and serving in World War II, Bumblebee — prior to the loss of his voicebox — fell in with Sector Seven at some point after the end of the war. At some point during the early 1960s the organization traded him to MI6, Bumblebee joining the ranks of Britain's elite counterintelligence agency P.R.O.G.R.A.M.M.E. Partnered with superspy David Reeve, and taking pointers from intelligence specialist Diana Lux, Bumblebee and Reeve embarked on a series of globetrotting adventures, battling against the forces of Konrad Gotell's E.I.D.O.L.O.N. crime syndicate. In 1964, the duo tracked Gottell to East Berlin. Though Reeve discovered that Gotell had already been killed, and his office booby-trapped rigged to blow, Bumblebee was forced to evade the German police before he could rescue his partner from Wildrider, killing him by throwing him into the Berlin Wall and crushing him with a chunk of rubble.</div>
-                        
+
+                </div>
+            </article>
+            <article class="postcard dark red">
+                <a class="postcard__img_link" href="#">
+                    <img class="img1 postcard__img" src="files/2.png" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title red"><a href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee">
+                            World War II</a></h1>
+
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Bumblebee arrived on Earth some time before the outbreak of the
+                        second World War, and alongside Hot Rod, they fought alongside a military unit in the war
+                        against the Nazis, taking up the codename ZB-7. He befriended the young Edmund Burton, but as
+                        the decades passed, Bumblebee would not come to remember World War II as a particularly
+                        noteworthy conflict.</div>
+
+                </div>
+            </article>
+            <article class="postcard dark green">
+                <a class="postcard__img_link" href="#">
+                    <img class="img1 postcard__img" src="files/3.png" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title green"><a
+                            href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee"> Bumblebee Movie
+                            Prequel</a></h1>
+
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">After arriving on Earth and serving in World War II, Bumblebee —
+                        prior to the loss of his voicebox — fell in with Sector Seven at some point after the end of the
+                        war. At some point during the early 1960s the organization traded him to MI6, Bumblebee joining
+                        the ranks of Britain's elite counterintelligence agency P.R.O.G.R.A.M.M.E. Partnered with
+                        superspy David Reeve, and taking pointers from intelligence specialist Diana Lux, Bumblebee and
+                        Reeve embarked on a series of globetrotting adventures, battling against the forces of Konrad
+                        Gotell's E.I.D.O.L.O.N. crime syndicate. In 1964, the duo tracked Gottell to East Berlin. Though
+                        Reeve discovered that Gotell had already been killed, and his office booby-trapped rigged to
+                        blow, Bumblebee was forced to evade the German police before he could rescue his partner from
+                        Wildrider, killing him by throwing him into the Berlin Wall and crushing him with a chunk of
+                        rubble.</div>
+
+                </div>
+            </article>
+            <article class="postcard dark yellow">
+                <a class="postcard__img_link" href="#">
+                    <img class="img1 postcard__img" src="files/4.jpg" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title yellow"><a
+                            href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee"> Features</a></h1>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">
+                        <ul>
+                            <li>Abilities: Bumblebee is an excellent scout, due to his speed and small size, but still a
+                                good warrior.</li>
+                            <li>Equipment: He is armed with two Energon blasters in his arms, he is also armed with an
+                                energy shield along with a plasma gun and rockets on his wrists</li>
+                            <li>Power: can transform into a Camaro muscle car, and scan other versions of them and
+                                transform into that version.</li>
+                        </ul>
                     </div>
-                </article>
-                <article class="postcard dark yellow">
-                    <a class="postcard__img_link" href="#">
-                        <img class="img1 postcard__img" src="files/4.jpg" alt="Image Title" />
-                    </a>
-                    <div class="postcard__text">
-                        <h1 class="postcard__title yellow"><a href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee">   Features</a></h1>
-                        <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">
-                            <ul>
-                                <li>Abilities: Bumblebee is an excellent scout, due to his speed and small size, but still a good warrior.</li>
-                                <li>Equipment: He is armed with two Energon blasters in his arms, he is also armed with an energy shield along with a plasma gun and rockets on his wrists</li>
-                                <li>Power: can transform into a Camaro muscle car, and scan other versions of them and transform into that version.</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </article>
-                <article class="postcard dark yellow">
-                    <a class="postcard__img_link" href="#">
-                        <img class="img1 postcard__img" src="files/5.jpg" alt="Image Title" />
-                    </a>
-                    <div class="postcard__text">
-                        <h1 class="postcard__title yellow"><a href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee">Pros and Cons</a></h1>
-                        <div class="postcard__bar"></div>
-                        <div class="postcard__preview-txt">Bumblebee is a robot hero from the Transformers franchise. Bumblebee is one of Optimus Prime's most trusted lieutenants. Although he is not the strongest or most powerful of the Autobots, Bumblebee more than makes up for this with a bottomless well of luck, determination and bravery. He would gladly give his life to protect others and stop the Decepticons.</div>
-                    </div>
-                </article>
-            </div>
-            <div class="container" style="margin-bottom: 50px;">
-                <div id="demo" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card" style="background-color: #232022;margin-left: 50%;transform: translateX(-50%);">
-                                <div class="row">
-                                    <div class="col-md-6 text-center align-self-center"> <img class="img1 img-fluid" src="files/bumblebee_body.jpg"> </div>
-                                    <div class="col-md-6 info">
-                                        <div class="row title">
-                                            <div class="col">
-                                                <h2>Bumblebee</h2>
-                                            </div>
-                                        </div>
-                                        <p>Determined Brave Lucky</p>
-                                        <div class="row price"> <label class="radio"> <input type="radio" name="size1" value="small" checked> <span>
-                                                    <div class="row"><span><b>Medium Size</b></span></div>
-                                                    <div class="row">$50,000</div></a>
-                                                </span> </label> <label class="radio"> <input type="radio" name="size1" value="large"> <span>
-                                                    <div class="row"><span><b>Large Size</b></span></div>
-                                                    <div class="row">$250,000</div></a>
-                                                </span> </label> </div>
+
+                </div>
+            </article>
+            <article class="postcard dark yellow">
+                <a class="postcard__img_link" href="#">
+                    <img class="img1 postcard__img" src="files/5.jpg" alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title yellow"><a
+                            href="https://michaelbaystransformers.fandom.com/wiki/Bumblebee">Pros and Cons</a></h1>
+                    <div cllass="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Bumblebee is a robot hero from the Transformers franchise.
+                        Bumblebee is one of Optimus Prime's most trusted lieutenants. Although he is not the strongest
+                        or most powerful of the Autobots, Bumblebee more than makes up for this with a bottomless well
+                        of luck, determination and bravery. He would gladly give his life to protect others and stop the
+                        Decepticons.</div>
+                </div>
+            </article>
+        </div>
+        <div class="container" style="margin-bottom: 50px;">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card"
+                            style="background-color: #232022;margin-left: 50%;transform: translateX(-50%);">
+                            <div class="row">
+                                <div class="col-md-6 text-center align-self-center"> <img class="img1 img-fluid"
+                                        src="files/bumblebee_body.jpg"> 
+                                        <a class="button" href="gallery.html">Bumblebee in Action</a>
                                     </div>
+                                <div class="col-md-6 info">
+                                    <div class="row title">
+                                        <div class="col">
+                                            <h2>Bumblebee</h2>
+                                        </div>
+                                    </div>
+                                    <p style="margin-left: 0px;">Determined Brave Lucky</p>
+                                    <div class="row price"> <label class="radio"> <input type="radio" name="size1"
+                                                value="small" checked> <span>
+                                                <div class="row"><span><b>Medium Size</b></span></div>
+                                                <div class="row">$50,000</div></a>
+                                            </span> </label> <label class="radio"> <input type="radio" name="size1"
+                                                value="large"> <span>
+                                                <div class="row"><span><b>Large Size</b></span></div>
+                                                <div class="row">$250,000</div></a>
+                                            </span> </label> </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
+        </div>
 
-        
+    </section>
+
+
+
     <script src="/about.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -211,7 +292,7 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.min.js"></script>
 
-    
+
 </body>
 
 </html>
