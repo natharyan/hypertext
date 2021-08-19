@@ -9,6 +9,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Home: Bumblebee</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,137 +20,194 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        h1 {
-            position: absolute;
-            top: 47%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-family: "Arial";
-            text-transform: uppercase;
-            opacity: .2;
-            font-size: 70px;
-        }
+        @-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
     </style>
 </head>
 
 <body>
-    <div id="particles-js">
+
         <div class="menu">
-            <div class="title">MENU</div>
+            <div class="titlenav">MENU</div>
             <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Bumblebee</a></li>
+                <li><a href="gallery.html">Action</a></li>
             </ul>
         </div>
 
 
         <img src="files/bumblebee.png" alt="" data-tilt data-tilt-reverse="true" data-tilt-max="5" data-tilt-speed="10"
             data-tilt-perspective="500"
-            style="display: block;margin-left: auto;margin-right: auto;margin-top: auto;margin-bottom: auto;height: 600px;">
+            style="display: block;margin-left: auto;margin-right: auto;margin-top: 150px;height: 300px;">
         <img src="files/autobot.png" alt="" data-tilt data-tilt-reverse="true" data-tilt-max="15" data-tilt-speed="10"
             data-tilt-perspective="500" style="position: fixed;left: 0;margin:auto;bottom: 0px;height: 100px;">
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.js"></script>
-    <script>
-        (function () {
-            particlesJS('particles-js', {
-                'particles': {
-                    'number': {
-                        'value': 100,
-                        'density': {
-                            'enable': true,
-                            'value_area': 1000
-                        }
-                    },
-                    'color': {
-                        'value': ['#111111', '#222222']
-                    },
-                    'shape': {
-                        'type': 'circle',
-                        'stroke': {
-                            'width': 0,
-                            'color': '#fff'
-                        },
-                        'polygon': {
-                            'nb_sides': 5
-                        }
-                    },
-                    'opacity': {
-                        'value': 0.6,
-                        'random': false,
-                        'anim': {
-                            'enable': false,
-                            'speed': 1,
-                            'opacity_min': 0.1,
-                            'sync': false
-                        }
-                    },
-                    'size': {
-                        'value': 2,
-                        'random': true,
-                        'anim': {
-                            'enable': false,
-                            'speed': 40,
-                            'size_min': 0.1,
-                            'sync': false
-                        }
-                    },
-                    'line_linked': {
-                        'enable': true,
-                        'distance': 80,
-                        'color': '#111',
-                        'opacity': 0.9,
-                        'width': 1
-                    }
-                },
-                'interactivity': {
-                    'detect_on': 'canvas',
-                    'events': {
-                        'onhover': {
-                            'enable': true,
-                            'mode': 'grab'
-                        },
-                        'onclick': {
-                            'enable': false
-                        },
-                        'resize': true
-                    },
-                    'modes': {
-                        'grab': {
-                            'distance': 240,
-                            'line_linked': {
-                                'opacity': 1
-                            }
-                        },
-                        'bubble': {
-                            'distance': 600,
-                            'size': 80,
-                            'duration': 8,
-                            'opacity': 6,
-                            'speed': 3
-                        },
-                        'repulse': {
-                            'distance': 300,
-                            'duration': 0.4
-                        },
-                        'push': {
-                            'particles_nb': 2
-                        },
-                        'remove': {
-                            'particles_nb': 4
-                        }
-                    }
-                },
-                'retina_detect': true
-            });
-
-        }).call(this);
-    </script>
+            <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+                <!-- <source src="audio.ogg" type="audio/ogg"> -->
+                <source id="source-audio" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              
+              <div class="player-ctn">
+                <div class="infos-ctn">
+                  <div class="timer">00:00</div>
+                  <div class="title"></div>
+                  <div class="duration">00:00</div>
+                </div>
+                <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+                <div class="btn-ctn">
+                   <div class="btn-action" onclick="rewind()">
+                      <div id="btn-faws-rewind">
+                        <i class='fas fa-backward'></i>
+                      </div>
+                   </div>
+                   <div class="btn-action" onclick="toggleAudio()">
+                      <div id="btn-faws-play-pause">
+                        <i class='fas fa-play' id="icon-play"></i>
+                        <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+                      </div>
+                   </div>
+                   <div class="btn-play" onclick="forward()">
+                      <div id="btn-faws-forward">
+                        <i class='fas fa-forward'></i>
+                      </div>
+                   </div>
+                </div>
+                <div class="playlist-ctn"></div>
+              </div>
+    <script src="/script.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
